@@ -15,6 +15,7 @@
     --Mensagem: #808080;
     --FundoNumero: #333333;
     --Barra: #262626;
+    --placeholder:#8C8C8C;
 }
 
 body {
@@ -24,9 +25,10 @@ body {
 }
 header{
     background-color: var(--header);
+    height: 150px;
+    width: 100%;
 }
 .topo {
-    margin-top: 72px;
     display: flex;
     justify-content: center;
 }
@@ -38,10 +40,6 @@ header{
 
 .logoTitulo img {
     margin-right: 10px;
-}
-
-.logoTitulo h1 {
-    color: purple;
 }
 
 
@@ -56,6 +54,7 @@ header{
 .adicionar {
     display: flex;
     justify-content: center;
+    margin-top: -20px;
 }
 
 .adicionar input {
@@ -64,6 +63,7 @@ header{
     background-color: var(--Barra);
     padding: 16px;
     border-radius: 8px;
+    border: none;
 }
 
 .botao {
@@ -74,6 +74,11 @@ header{
     background-color: var(--button);
     border-radius: 8px;
     padding: 10px;
+
+}
+
+input::placeholder {
+    color: var(--placeholder);
 }
 
 .botao p {
