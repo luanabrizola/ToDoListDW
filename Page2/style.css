@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fundo:#1a1a1a;
+    --header: #0D0D0D;
+    --button: #1E6F9F;
+    --concluidoRoxo: #8284FA;
+    --tarefaCridaAzul: #4EA8DE;
+    --Mensagem: #808080;
+    --FundoNumero: #333333;
+    --Barra: #262626;
+    --placeholder:#8C8C8C;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: white;
+    background-color: var(--fundo);
+}
+header{
+    background-color: var(--header);
+    height: 150px;
+    width: 100%;
+}
+.topo {
+    display: flex;
+    justify-content: center;
+}
+
+.logoTitulo {
+    display: flex;
+    align-items: center;
+}
+
+.logoTitulo img {
+    margin-right: 10px;
+}
+
+
+.color1 {
+    color: var(--tarefaCridaAzul);
+}
+
+.color2 {
+    color: var(--concluidoRoxo);
+}
+
+.adicionar {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.adicionar input {
+    height: 40px;
+    width: 550px;
+    background-color: var(--Barra);
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+.botao {
+    display: flex;
+    color: white;
+    margin-left: 10px;
+    align-items: center;
+    background-color: var(--button);
+    border-radius: 8px;
+    padding: 10px;
+
+}
+
+input::placeholder {
+    color: var(--placeholder);
+}
+
+.botao p {
+    margin-right: 5px;
+}
+
+.botao img {
+    width: 20px;
+    height: auto;
+}
+
+.tasks {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+
+#Criar {
+    color: var(--tarefaCridaAzul);
+}
+
+#Concluida {
+    color: var(--concluidoRoxo);
+}
+
+.Counter {
+    background-color: var(--FundoNumero);
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.created,
+.done {
+    display: flex;
+    align-items: center;
+}
+
+.tarefas {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    color: var(--Mensagem);
+    border-top: 1px solid var(--FundoNumero);
+}
+
+.tarefas h1{
+    color: var(--Mensagem);
+}
+
