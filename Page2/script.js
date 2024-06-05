@@ -1,4 +1,4 @@
-const checkbox = document.getElementById('check')
+const checkbox = document.querySelectorAll('check')
 
 
 

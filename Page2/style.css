@@ -186,5 +186,7 @@ input::placeholder {
     background-position: center;
 }
 
-
-
+.at input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: var(--concluidaCinza);
+}
