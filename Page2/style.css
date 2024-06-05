@@ -62,7 +62,9 @@ header{
 .adicionar {
     display: flex;
     justify-content: center;
-    margin-top: -20px;
+    transform: translateY(-50%);
+    
+
 }
 
 .adicionar input {
@@ -165,18 +167,23 @@ input::placeholder {
     color: var(--concluidaCinza);
 }
 
-.at input[type="radio"] {
+.at input[type="checkbox"] {
+    appearance: none;
     -webkit-appearance: none;
-    width: 20px;
-    height: 20px;
+    
+    min-width: 20px;
+    min-height: 20px;
     border: 2px solid var(--tarefaCridaAzul);
-    border-radius: 100px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
-.at input[type="radio"]:checked {
+.at input[type="checkbox"]:checked {
     background-color: var(--concluidoRoxo);
     border: var(--concluidoRoxo);
+    background-image: url(../imagens/check.png);
+    background-size: cover;
+    background-position: center;
 }
 
 
