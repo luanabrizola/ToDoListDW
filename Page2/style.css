@@ -16,6 +16,7 @@
     --FundoNumero: #333333;
     --Barra: #262626;
     --placeholder:#8C8C8C;
+    --concluidaCinza:#808080;
 }
 
 body {
@@ -137,7 +138,6 @@ input::placeholder {
     text-align: center;
     margin-top: 50px;
     padding: 10px; 
-    border-top: 1px solid var(--FundoNumero);
     width: 50%;
     display: flex;
     flex-direction: column; 
@@ -162,6 +162,7 @@ input::placeholder {
 
 #completed{
     text-decoration: line-through;
+    color: var(--concluidaCinza);
 }
 
 .at input[type="radio"] {
