@@ -149,28 +149,28 @@ input::placeholder {
 .at{
     background-color: var(--FundoNumero);
     height: 100px;
-    width: 100%;
     padding: 40px;
     border-radius: 5px;
     display: flex;
     align-items: center;
     margin-top: 10px;
+    text-align: justify;
+    border: 1px solid rgb(72, 72, 78);
 }
 
+.at label{
+    margin-left: 20px;
+    
+}
 .at img{
     width: 20px;
     height: 20px;
-}
-
-#completed{
-    text-decoration: line-through;
-    color: var(--concluidaCinza);
+    cursor: pointer;
 }
 
 .at input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
-    
     min-width: 20px;
     min-height: 20px;
     border: 2px solid var(--tarefaCridaAzul);

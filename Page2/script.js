@@ -1,4 +1,7 @@
-const checkbox = document.querySelectorAll('check')
+const checkboxes = document.querySelectorAll('.at');
+const tasksContainer = document.querySelector('.tarefas');
 
 
-
+function JogaBaixo(){
+    
+}
