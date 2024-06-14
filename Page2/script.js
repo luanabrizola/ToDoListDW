@@ -23,5 +23,50 @@ document.querySelector(".tarefas").addEventListener("click", event => {
         updateCounters();
     }
 });
-
 updateCounters();
+
+
+const form = document.getElementById("form");
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+
+    const input = document.querySelector(".adicionarTarefa");
+
+    const taskText = input.value;
+    
+    if (taskText !== "") {
+        adicionarTarefa(taskText);
+        input.value = "";
+    }
+});
+
+function adicionarTarefa(text) {
+    const tasksContainer = document.querySelector(".tarefas");
+
+    const newTask = document.createElement("div");
+    newTask.classList.add("at");
+
+    const checkbox = document.createElement("input");
+    checkbox.setAttribute("type", "checkbox");
+
+    const label = document.createElement("label");
+    label.textContent = text;
+
+    const deleteIcon = document.createElement("img");
+    deleteIcon.src = "../imagens/delete_24dp_FILL0_wght400_GRAD0_opsz24.png";
+    deleteIcon.alt = "Delete";
+    deleteIcon.classList.add("lixo");
+
+    newTask.appendChild(checkbox);
+    newTask.appendChild(label);
+    newTask.appendChild(deleteIcon);
+
+    tasksContainer.appendChild(newTask);
+}
+
+
+
+
+

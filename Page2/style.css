@@ -74,6 +74,7 @@ header{
     padding: 16px;
     border-radius: 8px;
     border: none;
+    color: white;
 }
 
 .botao {
@@ -84,7 +85,7 @@ header{
     background-color: var(--button);
     border-radius: 8px;
     padding: 10px;
-
+    border: none;
 }
 
 input::placeholder {
