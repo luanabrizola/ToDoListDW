@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="../imagens/Layer 2.png">
+    <script src="../Page2/script.js"></script>
     <title>ToDo List</title>
 </head>
 <body>
 
     <header class="topo">
-        <div class="logoTitulo">
+        <div class="logoTitulo">    
             <img src="../imagens/Layer 2.png" alt="Logo">
             <h1><span class="color1">to</span><span class="color2">do</span></h1>
         </div>
     </header>
     
-    <div class="adicionar">
-        <input id="novaTarefa" type="text" placeholder="Adicone uma nova tarefa">
-        <div class="botao">
-            <p>Criar</p>
-            <img src="../imagens/iconeMais.png" alt="">
+    <form id="form">
+        <div class="adicionar">
+
+            <input type="text" class="adicionarTarefa" placeholder="Adicone uma nova tarefa">
+            <button class="botao"> Criar <img src="../imagens/iconeMais.png" alt=""></button>
+
         </div>
-    </div>
+    </form>
 
     <div class="tasks">
         <div class="info">
