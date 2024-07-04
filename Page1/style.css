@@ -16,17 +16,25 @@
     --FundoNumero: #333333;
     --Barra: #262626;
     --placeholder:#8C8C8C;
+    --concluidaCinza:#808080;
 }
 
 body {
     font-family: "Inter", sans-serif;
     color: white;
     background-color: var(--fundo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 header{
     background-color: var(--header);
     height: 150px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .topo {
     display: flex;
@@ -54,7 +62,9 @@ header{
 .adicionar {
     display: flex;
     justify-content: center;
-    margin-top: -20px;
+    transform: translateY(-50%);
+    
+
 }
 
 .adicionar input {
@@ -64,6 +74,7 @@ header{
     padding: 16px;
     border-radius: 8px;
     border: none;
+    color: white;
 }
 
 .botao {
@@ -74,7 +85,7 @@ header{
     background-color: var(--button);
     border-radius: 8px;
     padding: 10px;
-
+    border: none;
 }
 
 input::placeholder {
@@ -93,11 +104,16 @@ input::placeholder {
 .tasks {
     text-align: center;
     margin-top: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 .info {
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
 
 #Criar {
@@ -124,12 +140,54 @@ input::placeholder {
 .tarefas {
     text-align: center;
     margin-top: 50px;
-    padding: 10px;
-    color: var(--Mensagem);
-    border-top: 1px solid var(--FundoNumero);
+    padding: 10px; 
+    width: 50%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
 }
 
-.tarefas h1{
-    color: var(--Mensagem);
+.at{
+    background-color: var(--FundoNumero);
+    height: 100px;
+    padding: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    text-align: justify;
+    border: 1px solid rgb(72, 72, 78);
 }
 
+.at label{
+    margin-left: 20px;
+    
+}
+.at img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.at input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    min-width: 20px;
+    min-height: 20px;
+    border: 2px solid var(--tarefaCridaAzul);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.at input[type="checkbox"]:checked {
+    background-color: var(--concluidoRoxo);
+    border: var(--concluidoRoxo);
+    background-image: url(../imagens/check.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.at input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: var(--concluidaCinza);
+}
